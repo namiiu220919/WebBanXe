@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ hàng</title>
+    <title>Liên Hệ</title>
     <link rel="stylesheet" href="boostrap.min.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="giohang.css">
+    <link rel="stylesheet" href="laithu.css">
 </head>
 
 <body>
@@ -19,80 +20,55 @@
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="index.html">Trang Chủ</a>
                     </li>
-                    <!-- dropdown -->
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="laithu.html">Lái thử</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="giohang.html">Giỏ Hàng</a>
+                        <a class="nav-link " aria-current="page" href="laithu.html">Lái Thử</a>
                     </li>
 
                 </ul>
-                <!-- </div> -->
             </div>
         </nav>
     </header>
-    <section class="cart">
-        <div class="container-fluid bg-light mt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-header text-center pb-4 pt-5">
-                            <h2>GIỎ HÀNG</h2>
-                            <hr>
-                        </div>
-                    </div>
-                    <form action="">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Sản phẩm</th>
-                                    <th>Giá</th>
-                                    <th>SL</th>
-                                    <th>Chọn</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td style="display: flex; align-items: center;"><img style="width: 150px" src="image/Evo200.png">Evo 200</td>
-                                    <td><p><span>22.000.000đ</span></p></td>
-                                    <td><input style="width: 30px; outline: none;" type="number" value="1" min="0"></td>
-                                    <td style="cursor: pointer;">Xoá</td>
-                                </tr>
-                                <tr>
-                                    <td style="display: flex; align-items: center;"><img style="width: 150px" src="image/Evo200-lite.png">Evo 200 Lite</td>
-                                    <td><p><span>22.000.000đ</span></p></td> 
-                                    <td><input style="width: 30px; outline: none;" type="number" value="1" min="0"></td>
-                                    <td style="cursor: pointer;">Xoá</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div style="text-align: right;" class="total">
-                            <p style="font-weight: bold;">Tổng tiền: <span>44.000.000đ</span></p>
-                        </div>
-                    </form>
-                </div>
+    <div class="dki container bg-light mt-4"  >
+        <h3 style="margin-top: 75px;">Đăng ký lái thử</h3>
+        <hr>
+        <div class="row align-items-start">
+            <div class="formdk col-lg-6 col-md-6 col-12 text-center mt-3">
+                <form action="">
+                    <input type="text" id="name" placeholder="Họ và tên" onblur="checkName()"><br>  
+                    <span id="tbName"> </span>
+                    <input type="text" id="email" placeholder="Email" onblur="checkEmail()"><br>
+                    <span id="tbMail"> </span>
+                    <input type="text" id="phone" placeholder="Số điện thoại" onblur="checkPhone()"><br>
+                    <span id="tbPhone"> </span>
+                    <br><input type="submit" value="Gửi" onclick="btnSubmit()">
+                    
+
+                </form>
             </div>
+                
         </div>
-    </section>
-    <footer class="container-fluid" style="background-color: #00396b;">
-        <div class="box-footer container" style="padding: 20px;"> 
+    </div>
+
+    <footer class="container-fluid" style="background-color: #00396b; margin-top: 10px;">
+        <div class="box-footer container" style="padding: 20px;">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-12 mb-5">
                     <h3>SUPPORT</h3>
                     <hr>
                     <p><b>2SIMPLEBOIS</b><br></p>
-                        <i class="fa fa-phone" aria-hidden="true" style="color: white;"> +123456</i><br>
-                        <i class="fa fa-envelope-o" aria-hidden="true" style="color: white;"> help@yourweb.com</i>
-                    
+                    <i class="fa fa-phone" aria-hidden="true" style="color: white;"> +123456</i><br>
+                    <i class="fa fa-envelope-o" aria-hidden="true" style="color: white;"> help@yourweb.com</i>
+
 
                 </div>
                 <div class="col-lg-3 col-md-6 col-12 mb-5">
-                    <h3>Đăng ký lái thử</h3>
+                    <h3>BOOKING</h3>
                     <hr>
-                    <p>Ô Tô</p>
-                    <p>Xe Máy Điện</p>
-                    
+                    <p>Room</p>
+                    <p>Tour</p>
+                    <p>Food</p>
+                    <p>Transport</p>
+                    <p>Gift Cards</p>
 
                 </div>
                 <div class="col-lg-3 col-md-6 col-12 mb-5">
@@ -153,7 +129,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="laithu.js"></script>
 </body>
 
 </html>

@@ -20,50 +20,51 @@
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="index.html">Trang Chủ</a>
                     </li>
-                    <!-- dropdown -->
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="index.html">Danh Mục</a>
+                        <a class="nav-link " aria-current="page" href="laithu.html">Lái thử</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="giohang.html">Giỏ Hàng</a>
+                        <a class="nav-link " aria-current="page" onclick="cuonGioHang()">Giỏ Hàng</a>
                     </li>
 
                 </ul>
-                <!-- </div> -->
             </div>
         </nav>
     </header>
 
     <div class="banner" style="margin-top:75px;">
-        <img src="image/banner1.png" alt="Los Angeles" class="d-block w-100">
-        <div class="carousel-caption">
-
-        </div>
+        <img src="image/banner1.png" id="anhbanner" class="d-block w-100" >
+        <a class="prev" onclick="prev()">❮</a>
+        <a class="next" onclick="next()">❯</a>
     </div>
 
     <section class="xe section-padding" id="about">
         <div class="container-fluid bg-light mt-5">
             <div class="container">
                 <div class="row">
+                    <table>
                     <div class="col-md-12">
                         <div class="section-header text-center pb-4 pt-5">
                             <h2>Ô TÔ</h2>
                             <hr>
                         </div>
                     </div>
+                    
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-12">
                             <div class="card text-center bg-white ">
                                 <div class="card-body">
                                     <img src="image/vf-5.png">
                                     <i class="bi bi-laptop"></i>
-                                    <h3 class="card-title">VF 5</h3>
+                                    <tr>
+                                    <td><h3 class="card-title">VF 5</h3></td>
                                     <p class="lead">
                                         <i class="fa fa-map-marker" aria-hidden="true" style="color: #ffe416;"></i>
                                         300km / lần sạc<br>
-                                        Giá từ: 458.000.000đ
+                                     <td> Giá từ: 458.000.000đ</td>
                                     </p>
-                                    <button>Thêm vào giỏ</button>
+                                    <td><button>Thêm vào giỏ</button></td>
+                                    </tr>
                                 </div>
 
                             </div>
@@ -240,8 +241,53 @@
                         </div>
 
                     </div>
+                </table>
                 </div>
     </section>
+    <section id="giohang" class="container bg-light ">
+        <div class="container-fluid mt-5">
+            <div class="cart">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center pb-4 pt-5">
+                            <h2>GIỎ HÀNG</h2>
+                            <hr>
+                        </div>
+                    </div>
+                    <form action="">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>SL</th>
+                                    <th>Chọn</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="display: flex; align-items: center;"><img style="width: 150px" src="image/Evo200.png">Evo 200</td>
+                                    <td><p><span>22.000.000đ</span></p></td>
+                                    <td><input style="width: 30px; outline: none;" type="number" value="1" min="0"></td>
+                                    <td style="cursor: pointer;">Xoá</td>
+                                </tr>
+                                <tr>
+                                    <td style="display: flex; align-items: center;"><img style="width: 150px" src="image/Evo200-lite.png">Evo 200 Lite</td>
+                                    <td><p><span>22.000.000đ</span></p></td> 
+                                    <td><input style="width: 30px; outline: none;" type="number" value="1" min="0"></td>
+                                    <td style="cursor: pointer;">Xoá</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div style="text-align: right;" class="total">
+                            <p style="font-weight: bold;">Tổng tiền: <span>44.000.000đ</span></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="container-fluid" style="background-color: #00396b;">
         <div class="box-footer container" style="padding: 20px;"> 
             <div class="row">
@@ -321,7 +367,7 @@
         </div>
     </footer>
 
-
+<script src="trangchu.js"></script>
 </body>
 
 </html>
