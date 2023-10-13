@@ -18,7 +18,7 @@
                 <a class="logo" href="index.html"><img src="image/logo1.png"></a>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="index.html">Trang Chủ</a>
+                        <a class="nav-link " aria-current="page" onclick="scrollToTop()">Trang Chủ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="laithu.html">Lái thử</a>
@@ -34,15 +34,14 @@
 
     <div class="banner" style="margin-top:75px;">
         <img src="image/banner1.png" id="anhbanner" class="d-block w-100" >
-        <a class="prev" onclick="prev()">❮</a>
-        <a class="next" onclick="next()">❯</a>
+        <a class="prev" onclick="prev()" style="cursor: pointer;">❮</a>
+        <a class="next" onclick="next()" style="cursor: pointer;">❯</a>
     </div>
 
     <section class="xe section-padding" id="about">
         <div class="container-fluid bg-light mt-5">
             <div class="container">
                 <div class="row">
-                    <table>
                     <div class="col-md-12">
                         <div class="section-header text-center pb-4 pt-5">
                             <h2>Ô TÔ</h2>
@@ -56,15 +55,13 @@
                                 <div class="card-body">
                                     <img src="image/vf-5.png">
                                     <i class="bi bi-laptop"></i>
-                                    <tr>
-                                    <td><h3 class="card-title">VF 5</h3></td>
+                                    <h3 class="card-title">VF 5</h3>
                                     <p class="lead">
                                         <i class="fa fa-map-marker" aria-hidden="true" style="color: #ffe416;"></i>
                                         300km / lần sạc<br>
-                                     <td> Giá từ: 458.000.000đ</td>
+                                        Giá từ: <span>458.000.000</span>đ
                                     </p>
-                                    <td><button>Thêm vào giỏ</button></td>
-                                    </tr>
+                                    <button>Thêm vào giỏ</button>
                                 </div>
 
                             </div>
@@ -78,7 +75,7 @@
                                     <p class="lead">
                                         <i class="fa fa-map-marker" aria-hidden="true" style="color: #ffe416;"></i>
                                         319km / lần sạc<br>
-                                        Giá từ: 710.000.000đ
+                                        Giá từ: <span>710.000.000</span>đ
                                     </p>
                                     <button>Thêm vào giỏ</button>
                                 </div>
@@ -94,7 +91,7 @@
                                     <p class="lead">
                                         <i class="fa fa-map-marker" aria-hidden="true" style="color: #ffe416;"></i>
                                         400km / lần sạc<br>
-                                        Giá từ: 1.090.000.000đ
+                                        Giá từ: <span>1.090.000.000</span>đ
                                     </p>
                                     <button>Thêm vào giỏ</button>
                                 </div>
@@ -110,7 +107,7 @@
                                     <p class="lead">
                                         <i class="fa fa-map-marker" aria-hidden="true" style="color: #ffe416;"></i>
                                         423km / lần sạc<br>
-                                        Giá từ: 1.491.000.000đ
+                                        Giá từ: <span>1.491.000.000</span>đ
                                     </p>
                                     <button>Thêm vào giỏ</button>
                                 </div>
@@ -136,7 +133,7 @@
                                     <p class="lead">
                                         <i class="fa fa-map-marker" aria-hidden="true" style="color: #ffe416;"></i>
                                         205km / lần sạc<br>
-                                        Giá từ: 22.000.000đ
+                                        Giá từ: <span>22.000.000</span>đ
                                     </p>
                                     <button>Thêm vào giỏ</button>
                                 </div>
@@ -152,7 +149,7 @@
                                     <p class="lead">
                                         <i class="fa fa-map-marker" aria-hidden="true" style="color: #ffe416;"></i>
                                         203km / lần sạc<br>
-                                        Giá từ: 22.000.000đ
+                                        Giá từ: <span>22.000.000</span>đ
                                     </p>
                                     <button>Thêm vào giỏ</button>
                                 </div>
@@ -168,7 +165,7 @@
                                     <p class="lead">
                                         <i class="fa fa-map-marker" aria-hidden="true" style="color: #ffe416;"></i>
                                         198km / lần sạc<br>
-                                        Giá từ: 29.900.000đ
+                                        Giá từ: <span>29.900.000</span>đ
                                     </p>
                                     <button>Thêm vào giỏ</button>
                                 </div>
@@ -184,7 +181,7 @@
                                     <p class="lead">
                                         <i class="fa fa-map-marker" aria-hidden="true" style="color: #ffe416;"></i>
                                         194km / lần sạc<br>
-                                        Giá từ: 36.900.000đ
+                                        Giá từ: <span>36.900.000</span>đ
                                     </p>
                                     <button>Thêm vào giỏ</button>
                                 </div>
@@ -200,7 +197,7 @@
                                     <p class="lead">
                                         <i class="fa fa-map-marker" aria-hidden="true" style="color: #ffe416;"></i>
                                         160km / lần sạc<br>
-                                        Giá từ: 56.000.000đ
+                                        Giá từ: <span>56.000.000</span>đ
                                     </p>
                                     <button>Thêm vào giỏ</button>
                                 </div>
@@ -216,7 +213,7 @@
                                     <p class="lead">
                                         <i class="fa fa-map-marker" aria-hidden="true" style="color: #ffe416;"></i>
                                         101km / lần sạc<br>
-                                        Giá từ: 63.900.000đ
+                                        Giá từ: <span>63.900.000</span>đ
                                     </p>
                                     <button>Thêm vào giỏ</button>
                                 </div>
@@ -232,7 +229,7 @@
                                     <p class="lead">
                                         <i class="fa fa-map-marker" aria-hidden="true" style="color: #ffe416;"></i>
                                         150km / lần sạc<br>
-                                        Giá từ: 69.900.000đ
+                                        Giá từ: <span>69.900.000</span>đ
                                     </p>
                                     <button>Thêm vào giỏ</button>
                                 </div>
@@ -265,23 +262,24 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <!-- <tr>
                                     <td style="display: flex; align-items: center;"><img style="width: 150px" src="image/Evo200.png">Evo 200</td>
-                                    <td><p><span>22.000.000đ</span></p></td>
-                                    <td><input style="width: 30px; outline: none;" type="number" value="1" min="0"></td>
+                                    <td><p><span>22.000.000</span>đ</p></td>
+                                    <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
                                     <td style="cursor: pointer;">Xoá</td>
                                 </tr>
                                 <tr>
                                     <td style="display: flex; align-items: center;"><img style="width: 150px" src="image/Evo200-lite.png">Evo 200 Lite</td>
-                                    <td><p><span>22.000.000đ</span></p></td> 
-                                    <td><input style="width: 30px; outline: none;" type="number" value="1" min="0"></td>
+                                    <td><p><span>22.000.000</span>đ</p></td> 
+                                    <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
                                     <td style="cursor: pointer;">Xoá</td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                         <div style="text-align: right;" class="total">
-                            <p style="font-weight: bold;">Tổng tiền: <span>44.000.000đ</span></p>
+                            <p style="font-weight: bold;">Tổng tiền: <span>0</span>đ</p>
                         </div>
+                        <button>Đặt hàng</button>
                     </form>
                 </div>
             </div>
@@ -335,10 +333,7 @@
                                 aria-describedby="emailHelp" placeholder="Email">
                             <div id="emailHelp" class="form-text"></div>
                         </div>
-                        <button type="submit" class="btn btn-warning" style="width: 100%;">
-                            SUBSCRIBE <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
-                        </button>
+                        
                     </form>
                     <div class="icon-new">
                         <div class="icon col-2">

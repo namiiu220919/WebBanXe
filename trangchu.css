@@ -82,7 +82,7 @@
     height: auto;
     
 }
-.card button {
+button {
     font-weight: bold;
     font-size: .875rem;
     line-height: 17px;
@@ -92,32 +92,39 @@
     transition: all .3s linear;
     border: none;
 }
-.card button:hover {
+button:hover {
     background: #1464f4;
     color: #f0f3f3; 
 }
-/* .prev, .next {
-    cursor: pointer;
+.prev, .next{
     position: absolute;
     top: 40%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;  
+    font-size: 28px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
     background-color: rgba(220, 220, 220, 0);
-  } */
+  }
+.prev {
+    left: 2%;
+    border-radius: 3px 0 0 3px;
+}
+.next {
+    right: 2%;
+    border-radius: 3px 0 0 3px;
+}
 
 
 .cart{
     width: 50%;
     margin: auto;
     text-align: center;
-    padding-top: 30px;
+    padding: 30px;
 }
 .cart h2{
     margin-bottom: 20px;
@@ -139,7 +146,7 @@
     text-align: right;
 }
 footer{
-    padding-top: 20px;
+    margin-top: 20px;
     background-image: url(image/banner2.jpg) ;
     position: relative;
     display: flex;
